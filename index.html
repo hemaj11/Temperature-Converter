@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ Temperature Converter</h1>
+
+    <input type="number" id="textbox" value="0" />
+
+    <div class="radio-group">
+      <label><input type="radio" id="toFahrenheit" name="unit" /> Celsius ➡️ Fahrenheit</label>
+      <label><input type="radio" id="toCelsius" name="unit" /> Fahrenheit ➡️ Celsius</label>
+    </div>
+
+    <button onclick="convert()">Convert</button>
+    <p id="result">Result appears here</p>
+
+    <button id="toggleTheme">🌗 Toggle Theme</button>
+  </div>
+
+  <audio id="beep" src="https://www.soundjay.com/button/sounds/button-4.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
