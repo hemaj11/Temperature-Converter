@@ -1,0 +1,89 @@
+:root {
+    --bg: #f0f8ff;
+    --text: #000;
+    --accent: #1b91f1;
+    --btn-bg: #28a745;
+    --btn-hover: #1e7e34;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #ffffff;
+    --accent: #90caf9;
+    --btn-bg: #006400;
+    --btn-hover: #004d00;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #textbox {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 2px solid var(--accent);
+    margin-bottom: 20px;
+  }
+  
+  .radio-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .radio-group label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    animation: fadeIn 0.4s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
